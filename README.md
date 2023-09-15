@@ -1,5 +1,5 @@
-# python-docker-template
-Python + Docker environment template.
+# VS Code state.vscdb Viewer
+
 
 ## Requirement
 
@@ -7,24 +7,38 @@ Python + Docker environment template.
   - docker-compose
 
 ## Usage
+
 Build image:
 
 ```console
-$ cp docker/python/.env.example docker/python/.env
-$ docker-compose build
+cp docker/python/.env.example docker/python/.env
+docker-compose build
+```
+
+Add your state.vscdb to source folder.
+
+In Windows, the file is located in `%APPDATA%\Code\User\globalStorage`.
+
+```console
+cp <path_to>/state.vscdb source/
 ```
 
 Run container:
 
 ```console
-$ docker-compose up -d
-$ docker-compose exec python bash
+docker-compose up -d
+docker-compose exec python bash
 ```
 
 Go to http://localhost:8888 and you'll see the notebooks.
 
+Run view-state.vscdb.ipynb.
 
+## Memo
 
+state.vscdb can be read by sqlite3.
+
+https://stackoverflow.com/questions/74701706/how-can-i-manually-edit-the-list-of-recently-opened-files-in-vs-code
 
 ## Licence
 

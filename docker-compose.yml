@@ -5,7 +5,6 @@ services:
     build:
       context: .
       dockerfile: docker/python/Dockerfile
-    container_name: python-docker-template
     environment:
       - TZ=Asia/Tokyo
     env_file:

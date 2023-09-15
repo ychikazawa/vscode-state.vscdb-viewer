@@ -1,8 +1,8 @@
-FROM python:3.7
+FROM python:3.11.5
 
 LABEL version="1.0"
 LABEL maintainer="Yuto Chikazawa <chikazawa0517@gmail.com>"
-LABEL description="python-docker-template"
+LABEL description="vscode-state.vscdb-viewer"
 
 ENV PYTHONUNBUFFERED=1
 
